@@ -15,13 +15,13 @@ var fortunelist = ["Today it's up to you to create the peacefulness you long for
 ", "Adversity is the parent of virtue."]
 
 var selected = document.getElementById("fortuneoutput")
-selected.addEventListener("mouseover", restyle)
+selected.addEventListener("click", restyle)
 
 function fortune() {
   var fortunefinal = fortunelist[Math.floor(Math.random() * fortunes.length)];
   var input = document.getElementById("fortuneinput").value;
   if(input){
-    selected.innerHTML = "To whom it may concern: " + fortunefinal;
+    fortunebutton.innerHTML = "To whom it may concern: " + fortunefinal;
   }
 
 
