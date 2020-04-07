@@ -3,7 +3,7 @@ halfresult.addEventListener("click", halfx)
 
 function halfx(){
   var halfass = document.getElementById("halfinput").value;
-  var end =  halfresult/2;
+  var end =  halfass / 2;
   statement = "Half of " + halfass + " is " + end;
   alert(statement);
 }
